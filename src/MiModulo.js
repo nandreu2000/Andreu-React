@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const MiModulo = () => {
 
@@ -7,6 +7,8 @@ const MiModulo = () => {
             <h2>Hola Primer Trabajo Practico en React Js!</h2>
             <hr/>
             <p>Aca iria un contenido</p>
+            <hr/>
+            <p>Agregamos el navBar</p>
         </div>
     )
 }
