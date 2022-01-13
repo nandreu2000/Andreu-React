@@ -2,26 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 import MiModulo from "./MiModulo.js";
 import NavBar from "./compopnent/NavBar";
+import CardProduct from './compopnent/cardProduct';
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      
       <header className="App-header">
       
-      
-        <img src={logo} className="App-logo" alt="logo" />
+      <CardProduct name="Crema Ultra Hidratante" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum debitis ipsum deserunt? Dolor, totam." />
+
+      <CardProduct name="Crema Lifting" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum debitis ipsum deserunt? Dolor, totam." />
+
+      <CardProduct name="Crema Lifting y Rellenador" description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum debitis ipsum deserunt? Dolor, totam." />
+        
         <p>
           La Primera modificacion en React JS
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    
       </header>
 
       <MiModulo/>

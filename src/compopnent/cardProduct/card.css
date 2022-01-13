@@ -1,0 +1,17 @@
+.card{
+    width: 70%;
+    border-radius: 10px;
+    background-color: #3fcd7f; 
+    margin: 25px;
+    box-shadow: rgba(255, 255, 255, 0.295) 0px 0px 10px ;
+}
+.card-img{
+    padding-top: 20px;
+}
+.card-content{
+    color:white;
+}
+
+p{
+    font-size: 1.3rem;
+}
