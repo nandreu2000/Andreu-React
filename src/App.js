@@ -3,6 +3,7 @@ import './App.css';
 import MiModulo from "./MiModulo.js";
 import NavBar from "./compopnent/NavBar";
 import CardProduct from './compopnent/cardProduct';
+import Contador from './compopnent/Contador';
 
 
 function App() {

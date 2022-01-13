@@ -1,0 +1,14 @@
+.contador{
+    padding-bottom: 20px;
+}
+
+.numero{
+margin: 0;
+}
+
+.buttons{
+font-size: 1.2rem;
+margin: 2px;
+width: 30px;
+height: 30px;
+}

@@ -1,5 +1,6 @@
 import './card.css';
 import crema from '../img/crema.png';
+import Contador from "../Contador";
 
 function CardProduct ({name, description}) {
     return (
@@ -11,6 +12,8 @@ function CardProduct ({name, description}) {
       <h2>{name}</h2>  
       <p>{description}</p>
     </div>
+
+    <Contador />
 </div>
 );
 }
