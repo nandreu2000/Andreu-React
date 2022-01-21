@@ -1,21 +1,30 @@
+import { useEffect, useState } from "react";
+//import { getProductos } from "../../baseDeDatos";
+import { getProductos } from "../itemList/itemList";
+import Item from "../item";
 import './card.css';
-import crema from '../img/crema.png';
-import Contador from "../Contador";
 
-function CardProduct ({name, description}) {
+const CardProduct = () => {
+    const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+
+    useEffect (() => {
+        setIsLoading(true);
+        getProductos()
+        .then((data) => setProducts(data))
+        .catch((error) => console.error(error))
+        .finally(() => setIsLoading(false));
+    }, []);
+
     return (
-    <div className="card">
-    <div className="card-img">
-    <img src={crema} height={150} />
-    </div>
-    <div className="card-content">
-      <h2>{name}</h2>  
-      <p>{description}</p>
-    </div>
-
-    <Contador />
-</div>
-);
-}
+        <div className="App">
+        {isLoading ? (
+            <p>Cargando...</p>
+        ) : (
+            products.map((product) => <Item key={product.id} product={product} />)
+        )}
+        </div>
+    );
+};
 
 export default CardProduct;

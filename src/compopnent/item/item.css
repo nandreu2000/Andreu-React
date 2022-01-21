@@ -1,0 +1,18 @@
+.tarjeeta {
+    border: 2px solid rebeccapurple;
+    width: 300px;
+    margin-top: 25px;
+}
+
+.tituloo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+.precioo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 201, 225);
+}
